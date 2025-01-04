@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class blackjackUITestsLaunchTests: XCTestCase {
+final class BlackjackUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
@@ -17,7 +17,6 @@ final class blackjackUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()

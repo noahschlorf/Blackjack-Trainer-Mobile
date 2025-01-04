@@ -8,13 +8,10 @@
 import SwiftUI
 
 @main
-struct blackjackApp: App {
-    let persistenceController = PersistenceController.shared
-
+struct BlackjackApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainView()
         }
     }
 }
