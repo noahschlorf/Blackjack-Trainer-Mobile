@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CBEF344C2D29B849003040DB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CBEF344A2D29B844003040DB /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CBDD18632CFEB35F0090AFF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		CBDD184D2CFEB35E0090AFF2 /* blackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDD18622CFEB35F0090AFF2 /* blackjackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blackjackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDD186C2CFEB35F0090AFF2 /* blackjackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blackjackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEF344A2D29B844003040DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,6 +61,11 @@
 		CBDD186F2CFEB35F0090AFF2 /* blackjackUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = blackjackUITests;
+			sourceTree = "<group>";
+		};
+		CBEF344F2D29B86A003040DB /* images */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +98,8 @@
 		CBDD18442CFEB35E0090AFF2 = {
 			isa = PBXGroup;
 			children = (
+				CBEF344A2D29B844003040DB /* README.md */,
+				CBEF344F2D29B86A003040DB /* images */,
 				CBDD184F2CFEB35E0090AFF2 /* blackjack */,
 				CBDD18652CFEB35F0090AFF2 /* blackjackTests */,
 				CBDD186F2CFEB35F0090AFF2 /* blackjackUITests */,
@@ -145,6 +157,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				CBDD18652CFEB35F0090AFF2 /* blackjackTests */,
+				CBEF344F2D29B86A003040DB /* images */,
 			);
 			name = blackjackTests;
 			packageProductDependencies = (
@@ -232,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEF344C2D29B849003040DB /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
