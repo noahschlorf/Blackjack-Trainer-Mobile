@@ -1,4 +1,4 @@
-# Blackjack Trainer Mobile
+ # Blackjack Trainer Mobile
 
 ## Overview
 Blackjack Trainer Mobile is an iOS application designed to help users improve their blackjack skills using basic strategy. The app offers a clean and interactive interface where players can practice decision-making based on blackjack strategy charts and track their performance over time.
@@ -14,17 +14,16 @@ Blackjack Trainer Mobile is an iOS application designed to help users improve th
 - **User-Friendly Design:** Clean, minimalistic design with easy navigation between practice and strategy tabs.
 
 ## Screenshots
-Here are some screenshots showcasing the app's features:
+Here are some screenshots showcasing the app's features (resized for better readability):
 
-![Practice Mode](images/1.png)
+<img src="images/1.png" alt="Practice Mode" width="300">
 
-![Strategy Chart](images/2.png)
+<img src="images/2.png" alt="Strategy Chart" width="300">
 
-![Gameplay](images/3.png)
+<img src="images/3.png" alt="Gameplay" width="300">
 
-![Correct Play](images/4.png)
+<img src="images/4.png" alt="Correct Play" width="300">
 
-*Note:* Ensure the `images` directory is correctly placed in the root folder and the images are properly named as shown above.
 
 ## Installation
 1. Clone the repository:
@@ -33,5 +32,8 @@ Here are some screenshots showcasing the app's features:
    ```
 2. Open the project in **Xcode**.
 3. Build and run the app on a simulator or physical device.
+
+
+Improve your blackjack game with **Blackjack Trainer Mobile** today!
 
 
