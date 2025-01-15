@@ -72,17 +72,23 @@ struct PracticeView: View {
             // Bottom Section (Fixed)
             VStack(spacing: 16) {
                 // Feedback Area
+                // Feedback Area
                 Group {
                     if let feedback = viewModel.feedback {
                         Text(feedback)
                             .padding()
-                            .background(Color.secondary.opacity(0.2))
+                            .background(
+                                viewModel.stats.correctDecisions > 0 && feedback.contains("Correct")
+                                    ? Color.green.opacity(0.2)
+                                    : Color.red.opacity(0.2)
+                            )
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
                     }
                 }
                 .frame(height: 60)
+
                 
                 // Action Buttons
                 ActionButtonsView(viewModel: viewModel)
