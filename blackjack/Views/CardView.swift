@@ -2,25 +2,27 @@ import SwiftUI
 
 struct CardView: View {
     let card: Card
-    private let cardWidth: CGFloat = 90
-    private let cardHeight: CGFloat = 126
+    private var cardSize: CGFloat {
+        // Dynamically calculate card size based on screen width
+        UIScreen.main.bounds.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.15 : 0.2)
+    }
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 8)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(Color.white)
-                .shadow(radius: 2)
+                .shadow(radius: 4)
             
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.black, lineWidth: 1)
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color.black, lineWidth: 2)
             
             VStack {
                 HStack {
                     VStack(alignment: .leading, spacing: 0) {
                         Text(rankString)
-                            .font(.system(size: 14, weight: .bold))
+                            .font(.system(size: cardSize * 0.2, weight: .bold))
                         Image(systemName: suitSymbol)
-                            .font(.system(size: 10))
+                            .font(.system(size: cardSize * 0.15))
                     }
                     .foregroundColor(suitColor)
                     Spacer()
@@ -29,7 +31,7 @@ struct CardView: View {
                 Spacer()
                 
                 Image(systemName: suitSymbol)
-                    .font(.system(size: 30))
+                    .font(.system(size: cardSize * 0.4))
                     .foregroundColor(suitColor)
                 
                 Spacer()
@@ -38,17 +40,17 @@ struct CardView: View {
                     Spacer()
                     VStack(alignment: .trailing, spacing: 0) {
                         Text(rankString)
-                            .font(.system(size: 14, weight: .bold))
+                            .font(.system(size: cardSize * 0.2, weight: .bold))
                         Image(systemName: suitSymbol)
-                            .font(.system(size: 10))
+                            .font(.system(size: cardSize * 0.15))
                     }
                     .rotationEffect(.degrees(180))
                     .foregroundColor(suitColor)
                 }
             }
-            .padding(6)
+            .padding(cardSize * 0.05)
         }
-        .frame(width: cardWidth, height: cardHeight)
+        .frame(width: cardSize, height: cardSize * 1.4)
         .accessibilityElement()
         .accessibilityLabel("\(rankString) of \(card.suit.rawValue.capitalized)")
         .accessibilityHint("A \(rankString) in \(card.suit.rawValue.capitalized) suit.")
